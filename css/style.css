@@ -253,6 +253,7 @@ a {
     left: 75px;
     position: absolute;
     z-index: 2;
+    font-family: ObjectSans-Regular;
 }
 
 /* Title */
@@ -269,11 +270,13 @@ a {
     line-height: .75;
     padding-top: 50px;
     padding-left: 50px;
+    font-family: ObjectSans-Regular;
 }
 
 .subheader {
     line-height: .75;
     padding-left: 50px;
+    font-family: ObjectSans-Regular;
 }
 
 .description p {
@@ -391,7 +394,6 @@ a {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 .left_nav {
     width: 100px;
     position: fixed;
@@ -404,9 +406,6 @@ a {
     border-right: 1px solid black;
     z-index: 2;
 }
-
-
-
 nav {  
     display: flex;
     flex-direction: column;
@@ -414,14 +413,12 @@ nav {
     height: 35%;
     margin: auto;
 }
-
 nav a {
     text-decoration: none;
     writing-mode: vertical-rl;
     margin: auto;
     color: black;
 }
-
 .header_container_home {
     height: 100vh;
     width: 100vw;
@@ -430,7 +427,6 @@ nav a {
     flex-direction: row;
     justify-content: space-between;
 }
-
 .header_content {
     align-self: center;
     display: flex;
@@ -445,19 +441,12 @@ nav a {
 header h1 {
     font-size: 95px;
 }
-
-
-
-
-
 header h2 {
     font-size: 48px;
 }
-
 header h3 {
     font-size: 32px;
 }
-
 .grid_container_projects {
     display: grid;
     grid-template-areas: 
@@ -467,12 +456,10 @@ header h3 {
     margin-top: -100px;
     margin-bottom: -100px;
 }
-
 .projects {
     overflow: hidden;
     height: 100vh;
 }
-
 .footprint {
     grid-area: footprint;
     background-color: light cyan;
@@ -481,7 +468,6 @@ header h3 {
     flex-direction: row-reverse;
     text-align: right;
 }
-
 .footprint_description {
     padding-top: 125px;
     padding-bottom: 125px;
@@ -492,7 +478,6 @@ header h3 {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .adult-it {
     grid-area: adult-it;
     background-color: lightgreen;
@@ -501,7 +486,6 @@ header h3 {
     flex-direction: row;
     text-align: left;
 }
-
 .adult-it_description {
     padding-top: 125px;
     padding-bottom: 125px;
@@ -511,38 +495,29 @@ header h3 {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .extra1 {
     grid-area: extra1;
 }
-
 .extra2 {
     grid-area: extra2;
 }
-
 .extra3 {
     grid-area: extra3;
 }
-
 .extra4 {
     grid-area: extra4;
 }
-
 .extra4 {
     grid-area: extra4;
 }
-
 .project_images {
     width: 75%;
 }
-
 .pollution_image {
     object-fit: scale-down;
     width: 200px;
     
 }
-
-
 footer {
     display: flex;
     flex-direction: row;
@@ -551,12 +526,10 @@ footer {
     margin-left: 100px;
     justify-content: center;
 }
-
 footer p {
     padding: 25px;
     bottom: 0;
 }
-
 .about_container {
     display: flex;
     flex-direction: column;
@@ -565,7 +538,6 @@ footer p {
     justify-items: center;
     align-items: center;
 }
-
 .about_imagesheader_container {
     display: flex;
     flex-direction: row;
@@ -573,40 +545,30 @@ footer p {
     align-items: center;
     justify-content: space-between;
 }
-
-
-
 .about_header {
     flex-basis: 35%;
     padding-left: 100px;
-
 }
-
 .about_header h1 {
     font-size: 48px;
 }
-
 .about_content {
     width: 600px;
     text-align: left;
 }
-
 .about_paragraph {
     padding-bottom: 50px;
 }
-
 .skills_icons {
     height: 50px;
     width: 50px;
     overflow: hidden;
 }
-
 .skills_icons img {
     object-fit: cover;
     height: 100px;
     object-position: 50% 50%;
 }
-
 @media only screen and (max-width: 600px) {
     header {
         flex-direction: column;
@@ -631,7 +593,6 @@ footer p {
         padding-bottom: 50px;
     }
 }
-
 .mobile_nav {
     display:none;
 } */
