@@ -173,6 +173,10 @@ a {
     font-weight: 100;
 }
 
+.normal-line-height {
+    line-height: 1.5;
+}
+
 .close-letter-spacing {
     letter-spacing: -.05em;;
 }
@@ -319,10 +323,6 @@ a {
 
 
 /* About Page */
-
-.about-content {
-    line-height: 1.5;
-}
         
 .about-self-portrait {
     object-fit: cover;
