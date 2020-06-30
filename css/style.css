@@ -87,6 +87,14 @@ a {
     border: 1px solid #ffffff;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 
 
 /* Colors */

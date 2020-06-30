@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="js/script.js"></script>-->
+    <script type="text/javascript" src="js/fullpage.fadingEffect.min.js"></script>
+    <script type="text/javascript" src="js/fullPage.js/dist/fullpage.extensions.min.js"></script>
+    <title>Document</title>
+</head>
+<body>    
+    <div id="myContainer">
+        <div class="section fp-section active fp-completely" data-fp-styles="null" data-anchor="firstPage" style="height: 100vh; background-color: rgb(97, 189, 109);">
+            <div class="fp-tableCell" style="height: 199px;">
+                <div class="intro">
+                    <h1>Fading Effect</h1>
+                    <p>It can be turned on for sections and slides or just for one of them.</p>
+                    <p>Use: <span class="code">fadingEffect:true</span>, <span class="code">fadingEffect:'slides'</span> or <span class="code">fadingEffect:'sections'</span></p>
+                </div>
+            </div>
+        </div>
+         <div class="section fp-section fp-table" data-fp-styles="null" data-anchor="secondPage" style="height: 150px; background-color: rgb(75, 191, 195);">
+            <div class="fp-tableCell" style="height: 150px;">
+                <h1>Section 2</h1>
+            </div>
+        </div>
+        <div class="section fp-section" data-fp-styles="null" data-anchor="3rdPage" style="height: 150px; background-color: rgb(123, 170, 190);">
+            <div class="fp-tableCell" style="height: 150px;">
+                <h1>Section 3</h1>
+            </div>
+        </div>
+        <div class="section fp-section fp-table" data-fp-styles="null" data-anchor="4thpage" style="height: 150px; background-color: whitesmoke;">
+            <div class="fp-tableCell" style="height: 150px;">
+                <h1>Section 4</h1>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+
+
+    
+    <!-- END WARNING-->
+    
+    
+    
+    <script type="text/javascript">
+        new fullpage('#myContainer', {
+            fadingEffect: true,
+        });
+    
+        
+    </script>
+    
+</body>
+</html>
