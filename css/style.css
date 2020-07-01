@@ -321,6 +321,12 @@ a {
     height: 33.3%;
 }
 
+.paris {
+    object-fit: scale-down;
+    height: 90vh;
+    bottom: 0;
+    position: absolute;
+}
 
 /* About Page */
         
