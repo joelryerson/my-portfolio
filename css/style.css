@@ -11,9 +11,10 @@
   }
 
 body {
-    font-family: Euclid Circular B;
+    font-family: "Shree Devanagari 714";
     line-height: 1.5;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    height: 100vh;
 }
 a {
     text-decoration: none;
@@ -64,17 +65,17 @@ a {
 .flex-row {
     display: flex;
     flex-direction: row;
-    align-content: center;
+}
+
+.flex-center {
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     justify-content: center;
 }
 
 .flex-column {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: center;
 }
 
 .center {
@@ -93,6 +94,10 @@ a {
 
 .absolute {
     position: absolute;
+}
+
+.twenty-padding {
+    padding: 20px;
 }
 
 
@@ -163,6 +168,14 @@ a {
     color: #2D649C;
 }
 
+.raffia-background {
+    background-color: #D8C3A5;
+}
+
+.raffia-font {
+    color: #D8C3A5;
+}
+
 
 
 
@@ -178,7 +191,11 @@ a {
 }
 
 .close-letter-spacing {
-    letter-spacing: -.05em;;
+    letter-spacing: -.05em;
+}
+
+.xx-large-font {
+    font-size: calc(95px + (200 - 95) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .x-large-font {
@@ -190,27 +207,106 @@ a {
 }
 
 .medium-font {
+    font-size: calc(32px + (64 - 32) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.small-font {
     font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
-
-
-/* Border and Page Containers */
-.border-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+.filena-thin {
+    font-family: "Filena-Thin";
 }
 
+.filena-semibold {
+    font-family: "Filena-SemiBold";
+}
+
+.filena-bold {
+    font-family: "Filena-Bold";
+}
+
+.blackout-midnight {
+    font-family: "Blackout-Midnight";
+}
+
+.blackout-2am {
+    font-family: "Blackout-2AM";
+}
+
+
+
+/* Page, Border, and Content Containers 
 .page-container {
-    height: 90%;
-    width: 93%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content-container {
+    background-color: inherit;
+    width: 100vw;
+    margin: 20px;
+    border: 20px solid black;
+    overflow: hidden;
+    
+}
+
+*/
+
+
+
+.home-grid-container {
+    border: 20px solid black;
+    background-color: black;
+    margin: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'name name name about'
+    'name name name about'
+    'work subheader subheader contact'
+    'work role role role';
+}
+
+.img-fit {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+section.name {
+    grid-area: name;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+ 
+
+section.about {
+    grid-area: about;
+}
+
+section.work {
+    grid-area: work;
+}
+
+section.sub {
+    grid-area: subheader;
+}
+
+section.contact {
+    grid-area: contact;
+}
+
+section.role {
+    grid-area: role;
 }
 
 
@@ -254,17 +350,17 @@ a {
 
 .logo {
     top: 10px;
-    left: 75px;
+    left: 1%;
     position: absolute;
     z-index: 2;
-    font-family: ObjectSans-Regular;
+    font-family: "Shree Devanagari 714";
 }
 
 /* Title */
 
 .title {
     width: 66.66%;
-    font-family: ObjectSans-Regular;
+    font-family: "Shree Devanagari 714";
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,13 +370,13 @@ a {
     line-height: .75;
     padding-top: 50px;
     padding-left: 50px;
-    font-family: ObjectSans-Regular;
+    font-family: "Filena-SemiBold";
 }
 
 .subheader {
     line-height: .75;
     padding-left: 50px;
-    font-family: ObjectSans-Regular;
+    font-family: "Shree Devanagari 714";
 }
 
 .description p {
@@ -331,11 +427,20 @@ a {
 /* About Page */
         
 .about-self-portrait {
-    object-fit: cover;
+    object-fit: scale-down;
     height: 100vh;
-    width: 100vw;
-    object-position: 50% 1%;
-    top: 0;
+    object-position: 50% 50%;
+    bottom: 0;
+}
+
+.circle {
+    height: 1160px;
+    width: 1160px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: #8e8d8a solid 1px;
+    bottom: -400px;
+    
 }
 
 .mission {
@@ -348,6 +453,14 @@ a {
     line-height: 1.0;
     padding-bottom: 100px;
     padding-right: 100px;
+}
+
+.my-mission {
+    object-fit: scale-down;
+    top: 50px;
+    width: 100vw;
+    object-position: 50% 50%;
+    position: absolute;
 }
 
 .how-I-got-here {
