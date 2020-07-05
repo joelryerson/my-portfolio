@@ -1,4 +1,9 @@
 .grid-height {
   height: calc(100vh - 80px);
 }
+
+.div-fit {
+  height: calc(100%);
+  width: calc(100%);
+}
 /*# sourceMappingURL=sass.css.map */
