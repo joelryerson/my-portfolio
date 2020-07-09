@@ -1,5 +1,10 @@
-.grid-height {
+.grid-full-height {
   height: calc(100vh - 80px);
+}
+
+.div-full-height {
+  height: calc(100vh - 80px);
+  width: calc(100% - 80px);
 }
 
 .div-fit {

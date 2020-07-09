@@ -4,28 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sass.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript" src="js/fullpage.fadingEffect.min.js"></script>
     <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
+    <script src="js/gestixi-image-scale-2a0c0b2/image-scale.js" type="text/javascript"></script>
     <title>Document</title>
 </head>
-<body>
-    <div id='myContainer'>
-        <div class= "border-container sea-fog-background hidden section fp-section active fp-completely fp-table" data-fp-styles="null" data-anchor="get-to-know-me">
-            <div class="circle stack0"></div>
-            <img class="about-self-portrait stack1" src="images/solo.png">
-            <div class="logo">
-                <h1 class="light_font medium-font flamingo-font">
-                    <a href="index.html">joel ryerson<span class="heathered-gray-font">.</span></a>
-                </h1>
+<body class="narvik-background hidden">
+    <div class="border absolute div-full-height"></div>
+    <div id="myContainer">
+        <div class="flex-row flex-center hidden section fp-section active fp-completely fp-table" data-fp-styles="null" data-anchor="get-to-know-me">
+            <div class="stack1">
+                <img class="about-self-portrait" src="images/solo.png">
             </div>
-            <div class="page-container flex-row flex-center stack0">         
-                <div>
-                    <h1 class="light_font xx-large-font flamingo-font fit-content" style="text-align: center;">
-                        get to know me<span class="heathered-gray-font">.</span>
-                    </h1>
+            
+            <div class="img-fit stack0" style="width: 95vw; align-self: flex-end;">
+                <img src="images/get-to-know-me.png" alt="">
+            </div> 
+        </div>
+        <div class="flex-column flex-center hidden section fp-section fp-table" data-fp-styles="null" data-anchor="my-mission">
+            <div class="img-fit" style="width: 90vw; align-self: center;padding: 50px;">
+                <img src="images/my-mission.png" alt="">
+            </div>
+        </div>
+        <div class="flex-row hidden section fp-section fp-table" data-fp-styles="null" data-anchor="how-I-got-here" style="justify-content: space-evenly; align-items: center;">
+            <div class="img-fit" style="width: 30vw; margin-left:60px; margin-right: 20px; max-height: 80vh;">
+                <p style="letter-spacing: -.04em; word-spacing: -.15em;"> <span class="flamingo-font firstcharacter">W</span>orking in many different fields over the last ten years, I’ve formed relationships that have enabled me to understand human interaction on a deeper, more intimate level. Having empathy, patience, humility, and an open mind is critical during every stage of the design process. Always be curious and always be hungry to learn more.</p>
+                <img src="images/how-I-got-here-infographic.png" style="margin-top: 50px;"alt="">
+            </div>
+            <div class="vert-line"></div>
+            <div class="img-fit fit-content" style="width: 60vw; justify-self: flex-end; margin-right: 60px; margin-left: 20px;">
+                <img src="images/how-I-got-here.png" alt="">
+            </div>
+            
+        </div>
+        <div class="flex-row flex-center hidden section fp-section fp-table" data-fp-styles="null" data-anchor="skills">
+            <div class="div-full-height skills-grid">
+                <div class="img-fit div-fit skills-header narvik-background flex-row flex-center">
+                    <img src="images/skills.png" alt="">
                 </div>
+                <div class="div-fit img-fit product-design narvik-background flex-row flex-center">
+                    <img src="images/product-design.png" alt="">
+                </div>
+                <div class="ux-ui narvik-background div-fit img-fit flex-row flex-center">
+                    <img src="images/UX-UI.png" alt="">
+                </div>
+                <div class="concept-strategy narvik-background"></div>
+                <div class="user-flow narvik-background"></div>
+                <div class="wireframes narvik-background"></div>
+                <div class="information-arch narvik-background"></div>
+                <div class="figma narvik-background"></div>
+                <div class="coding narvik-background"></div>
             </div>
+            
+        </div>
+    </div>
+    
+    
+    <!--Product Design
+UX/UI Design
+Concept & Strategy
+User Flows & Scenarios
+Wireframes & Prototyping
+Information Architecture
+Figma/Sketch/Adobe XD
+HTML, CSS, & JavaScript
+        
+        <div class="container div-full-height hidden">
+        <div class= "narvik-background hidden section fp-section active fp-completely fp-table flex-row flex-center" data-fp-styles="null" data-anchor="get-to-know-me">
+            <div class="div-fit">
+                <img class="about-self-portrait stack1" src="images/solo.png">
+            </div>
+            
+            <div class="div-fit img-fit twenty-padding stack-1">
+                <img src="images/get-to-know-me.png" alt="">
+            </div>
+            
         </div>
         <div class= "border-container flamingo-background hidden section fp-section fp-table" data-fp-styles="null" data-anchor="my-mission">
             <div class="circle stack0" style="top: -740px; border: #eae7dc solid 1px;"></div>
@@ -82,7 +139,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <script type="text/javascript">
         new fullpage('#myContainer', {
