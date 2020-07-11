@@ -220,6 +220,10 @@ a {
     font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.x-small-font {
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .firstcharacter {
     float: left;
     font-family: 'Knockout HTF66-FullFlyweight';
@@ -288,49 +292,72 @@ a {
 
 .skills-grid {
     display: grid;
-    width: 100%;
-    grid-template-columns: .5fr 1fr 1fr;
+    width: 40vw;
+}
+
+.skills-grid > img {
     
 }
 
+.skills-content {
+    justify-content: space-around;
+}
+
 .skills-header {
-    grid-row: span 9;
+    width: 20vw;
+    background-color: black;
+    
+}
+
+.skills-header img {
+    align-self: flex-start;
+    background-color: black;
+    
 }
 
 .product-design {
-    grid-column: span 2;
+    
+    
 }
 
 .ux-ui {
-    grid-column: span 2;
+    
 }
 
 .concept-strategy {
-    grid-column: span 2;
+    
 }
 
 .user-flow {
-    grid-column: span 2;
+    
 }
 
 .wireframes {
-    grid-column: span 2;
+    
 }
 
 .information-arch {
     
-    grid-row: span 2;
 }
 
 .figma {
     
-    grid-row: span 2;
+    
 }
 
 .coding {
-    grid-column: span 2;
-    grid-row: span 2;
+   
+   
 }
+
+.work-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 
 .border {
     border: 20px solid black;
@@ -387,7 +414,25 @@ a {
     grid-column: span 5;
     grid-row: span 2;
 }
-    
+   
+#firstPage .fp-bg {
+    background-image: url("../images/footprint.jpg");
+    background-size: cover;
+    background-position: center 80%;
+}
+
+#secondPage .fp-bg {
+    background-image: url("../images/adult-it.jpg");
+    background-size: cover;
+    background-position: center 80%;
+}
+
+#thirdPage .fp-bg {
+    background-image: url("../images/mental-health.jpg");
+    background-size: cover;
+    background-position: center 80%;
+}
+
 
 
 
