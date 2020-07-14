@@ -21,6 +21,12 @@ a {
     color: inherit;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .fit-content {
     height: fit-content;
     flex-basis: content;
@@ -227,8 +233,8 @@ a {
 .firstcharacter {
     float: left;
     font-family: 'Knockout HTF66-FullFlyweight';
-    font-size: 125px;
-    line-height: 60px;
+    font-size: 100px;
+    line-height: 61px;
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px;
@@ -295,9 +301,6 @@ a {
     width: 40vw;
 }
 
-.skills-grid > img {
-    
-}
 
 .skills-content {
     justify-content: space-around;
@@ -379,11 +382,7 @@ a {
     height: fit-content;
 }
 
-.img-fit img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
+
 
 .name {
     grid-column: span 5;
@@ -419,6 +418,7 @@ a {
     background-image: url("../images/footprint.jpg");
     background-size: cover;
     background-position: center 80%;
+    
 }
 
 #secondPage .fp-bg {
@@ -432,6 +432,59 @@ a {
     background-size: cover;
     background-position: center 80%;
 }
+
+.case-study-content-container {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.case-study-content {
+    margin: 100px;
+    text-align: right;
+    width: 50vw;
+    color: #DFDDD3;
+    border: .5px solid rgba(0,0,0, 0.8);
+    padding: 50px;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+}
+
+.case-study-border {
+    border: 20px solid #eae7dc;
+    
+}
+
+.case-study-content > p, h2 {
+    font-family: "Filena Thin";
+
+}
+
+.case-study-content > h1 {
+    font-family: "Filena Bold";
+    padding-top: 50px;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.left {
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    background-color: #f1f1f1;
+  }
+
+.progress-container {
+    height: 100%;
+    width: 20px;
+    background: transparent;
+  }
+  
+  .progress-bar {
+    height: 0%;
+    width: 20px;
+    background: #4caf50;
+  }
+
 
 
 
